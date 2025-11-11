@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -86,4 +89,9 @@ html { scroll-behavior: smooth; }
 
 .input {
   @apply w-full rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-white;
+}
+
+html.dark, html.dark body {
+  background-color: #000 !important;
+  color: #fff !important;
 }

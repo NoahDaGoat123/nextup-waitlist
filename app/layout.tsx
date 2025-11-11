@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-<body className="bg-black text-white antialiased">
+<body className="bg-black text-white antialiased min-h-screen">
   <Navbar />            {/* sticky, not fixed full-screen */}
   <main id="top" className="min-h-screen">
     {children}
