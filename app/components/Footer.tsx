@@ -22,10 +22,11 @@ export default function Footer() {
         </div>
 
         {/* Legal */}
-        <div className="text-center text-xs text-white/60">
-          © {new Date().getFullYear()} NextUp Athlete. All rights reserved.
-        </div>
-
+       <div className="text-center text-xs text-white/60">
+  © {new Date().getFullYear()} NextUp Athlete. All rights reserved.
+  <br />
+  <span className="text-white/60">Made with ❤️ by Noah.</span>
+</div>
         {/* Links */}
         <div className="flex items-center gap-6 text-sm text-white/70">
           <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
