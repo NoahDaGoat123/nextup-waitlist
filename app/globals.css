@@ -23,4 +23,67 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.bg-elite {
+  overflow: visible !important;
+}
+
+.bg-elite::before{
+  content:"";
+  position:absolute; inset:-30%;
+  background:
+    radial-gradient(650px 300px at 20% -10%, rgba(160,160,255,.07), transparent 60%),
+    radial-gradient(500px 250px at 85% -5%, rgba(255,160,200,.06), transparent 60%),
+    radial-gradient(800px 300px at 50% 105%, rgba(255,255,255,.05), transparent 60%);
+  filter: blur(30px);
+  pointer-events:none;
+}
+.bg-elite::after{
+  content:"";
+  position:absolute; inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Crect width='100%25' height='100%25' fill='transparent'/%3E%3Ccircle cx='1' cy='1' r='1' fill='white' fill-opacity='.015'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+  pointer-events:none;
+}
+
+:root { scroll-padding-top: 40px; }  /* match your navbar height */
+html { scroll-behavior: smooth; }
+
+
+.confetti {
+  position: fixed;
+  top: -10vh;
+  width: 8px;
+  height: 12px;
+  opacity: 0.9;
+  animation: confettiFall 1.4s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes confettiFall {
+  to {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0.9;
+  }
+}
+
+.input {
+  @apply w-full rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-white;
 }
