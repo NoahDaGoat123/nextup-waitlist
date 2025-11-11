@@ -377,13 +377,13 @@ export default function WaitlistForm() {
     <li className="flex flex-col bg-white/5 rounded-xl px-6 py-4 border border-white/10 backdrop-blur">
       <span className="text-blue-500 font-semibold text-xs uppercase">December 2025</span>
       <span className="text-lg font-medium">Private Beta (Early Access)</span>
-      <p className="text-white/60 text-sm">First group of athletes get highlight edits + coach outreach.</p>
+      <p className="text-white/60 text-sm">First group gets access to editing inside the mobile app.</p>
     </li>
 
     <li className="flex flex-col bg-white/5 rounded-xl px-6 py-4 border border-white/10 backdrop-blur">
       <span className="text-yellow-500 font-semibold text-xs uppercase">January 2026</span>
-      <span className="text-lg font-medium">Pro Plan Launch</span>
-      <p className="text-white/60 text-sm">Full access to unlimited AI highlight edits.</p>
+      <span className="text-lg font-medium">Plan Launch</span>
+      <p className="text-white/60 text-sm">AI highlight editing + export features go live in the mobile app.</p>
     </li>
 
     <li className="flex flex-col bg-white/5 rounded-xl px-6 py-4 border border-white/10 backdrop-blur bg-gradient-to-br from-fuchsia-500/30 via-white/15 to-indigo-400/30">
